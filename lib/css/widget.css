@@ -1,0 +1,15 @@
+article.widget {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+article.widget:first-child {
+  margin-left: 0px;
+}
+article.widget:last-child {
+  margin-right: 0;
+}
+article.widget h4.widget-title {
+  display: block;
+  background-color: #323232;
+  color: white;
+}

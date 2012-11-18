@@ -1,0 +1,58 @@
+article.widget {
+  > div, > ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: square;
+  }
+}
+
+.widgets {
+  article.widget {
+    .box-shadow(0 2px 0, #ddd);
+    .makeColumn(4.75);
+
+    background-color: @bodyBackground;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    > h4.widget-title {
+      .box-shadow(0 2px 0, #000);
+      display: block;
+      background-color: @grayDarker;
+      color: @navbarInverseLinkColorActive;
+      padding: 15px 0 15px 20px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    > div, > ul {
+      padding: 20px;
+    }
+
+    > ul {
+      margin-left: 20px
+    }
+
+  }
+}
+
+.sidebar {
+  .makeColumn(3);
+  .box-shadow(0 2px 0, #ddd);
+  background-color: @bodyBackground;
+
+  article.widget {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+
+    border-bottom: 1px solid @grayLighter;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

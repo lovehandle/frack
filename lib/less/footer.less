@@ -1,0 +1,42 @@
+#footer {
+  text-transform: uppercase;
+  font-family: Muli, sans-serif;
+  margin-top: 50px;
+
+  .navbar-inner {
+    .border-radius(0px);
+    font-size: 0.8em;
+  }
+
+  ul.nav {
+    a {
+      padding: 15px;
+    }
+
+    .dropdown-menu {
+      top: auto;
+      bottom: 100%;
+    }
+
+    .dropdown-menu::before {
+      border-bottom: 0px solid transparent !important;
+      border-top: 7px solid rgba(0, 0, 0, 0.2);
+      top: auto !important;
+      bottom: -7px;
+    }
+
+    .dropdown-menu::after {
+      border-bottom: 0px solid transparent !important;
+      border-top: 6px solid white;
+      top: auto !important;
+      bottom: -6px;
+    }
+
+  }
+}
+
+#copyright {
+  color: @grayLight;
+  font-size: 0.7em;
+  padding-left: 20px;
+}
