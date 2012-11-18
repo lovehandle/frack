@@ -13,7 +13,7 @@ require_once("lib/options.php");
 function frack_register_sidebars () {
   if ( function_exists( "register_sidebar") ) {
 
-    $widget_sidebars = array( "default", "home", "select_teams", "development_teams", "lessons", "tournaments", "camps" );
+    $widget_sidebars = array( "default", "home", "select_teams", "development_teams", "lessons", "tournaments", "camps", "contact" );
 
     foreach( $widget_sidebars as $sidebar_id ) {
       $sidebar_name = ucfirst(str_replace("_", " ", $sidebar_id));
