@@ -15,7 +15,7 @@ function frack_init () {
 ////////////////////////////////////
 
 function frack_set_theme_support() {
-  add_theme_support( 'post-thumbnails', array( 'post', 'page', 'custom-type' ) );
+  add_theme_support( 'post-thumbnails', array( 'post', 'page', 'slider-image' ) );
 }
 
 function frack_create_custom_post_types () {
