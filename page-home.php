@@ -7,6 +7,7 @@ Template Name: Home
 <?php get_header(); ?>
 
 <section id="content" role="main">
+
   <?php do_action('wp_rotator'); ?>
 
   <?php frack_get_option_tree( 'home_tagline', function ($home_tagline) {
