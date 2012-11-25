@@ -7767,6 +7767,10 @@ h1.post-title a {
 #tagline {
   text-align: center;
 }
+.wp-rotator-wrap .pane {
+  margin-left: auto;
+  margin-right: auto;
+}
 h1,
 h2,
 h3,
