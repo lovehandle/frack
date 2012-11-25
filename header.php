@@ -47,12 +47,6 @@
         <?php
       }); ?>
 
-
-
-        #content {
-          background-image: url('') no-repeat;
-        }
-
     </style>
 
     <?php wp_head(); ?>
