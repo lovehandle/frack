@@ -26,7 +26,7 @@ function frack_create_custom_post_types () {
         'singular_name' => __( 'Slider Image' )
       ),
       'public' => true,
-      'supports' => array('title', 'excerpt', 'thumbnail', 'custom-fields'),
+      'supports' => array('title', 'excerpt', 'thumbnail'),
     )
   );
 }
