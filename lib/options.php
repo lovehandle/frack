@@ -19,14 +19,14 @@ function frack_set_theme_support() {
 }
 
 function frack_create_custom_post_types () {
-  register_post_type( 'image-slider',
+  register_post_type( 'slider-image',
     array(
       'labels' => array(
-        'name' => __( 'Image Slider Items' ),
-        'singular_name' => __( 'Image Slider Item' )
+        'name' => __( 'Slider Images' ),
+        'singular_name' => __( 'Slider Image' )
       ),
       'public' => true,
-      'supports' => array('title', 'excerpt', 'thumbnail', 'custom-fields'),
+      'supports' => array('title', 'excerpt', 'post-thumbnails'),
     )
   );
 }
