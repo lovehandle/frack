@@ -153,8 +153,8 @@ function frack_page_content() {
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <?php if ( has_post_thumbnail() ) { ?>
-      <style type="text/css" media="all"> #content { background: url("<?php wp_get_attachment_url( get_post_thumbnail_id() ); ?>") no-repeat; } </style>
-    <?php { ?>
+      <style type="text/css" media="all"> #content { background: url("<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>") no-repeat; } </style>
+    <?php } ?>
 
     <article class="post" role="article">
       <header class="post-header">
