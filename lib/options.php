@@ -3,7 +3,7 @@
 add_action('after_setup_theme','frack_init', 15);
 
 function frack_init () {
-  add_action( "init",               "frack_create_custom_post_types" );
+  add_action( "after_setup_theme",  "frack_create_custom_post_types" );
   add_action( "widgets_init",       "frack_register_sidebars" );
   add_action( "after_setup_theme",  "frack_register_menus" );
   add_action( "after_setup_theme",  "frack_set_theme_support" );
@@ -15,7 +15,7 @@ function frack_init () {
 ////////////////////////////////////
 
 function frack_set_theme_support() {
-  add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+  add_theme_support( 'post-thumbnails', array( 'post', 'page', 'custom-type' ) );
 }
 
 function frack_create_custom_post_types () {
@@ -26,7 +26,7 @@ function frack_create_custom_post_types () {
         'singular_name' => __( 'Slider Image' )
       ),
       'public' => true,
-      'supports' => array('title', 'excerpt', 'post-thumbnails'),
+      'supports' => array('title', 'excerpt', 'thumbnail'),
     )
   );
 }
