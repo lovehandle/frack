@@ -7768,8 +7768,8 @@ h1.post-title a {
   text-align: center;
 }
 .wp-rotator-wrap .pane {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !imoprtant;
+  margin-right: auto !importantt;
 }
 h1,
 h2,
