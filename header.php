@@ -47,12 +47,13 @@
         <?php
       }); ?>
 
-      <?php if ( has_post_thumbnail( $post->ID) ) : ?>
+
         <?php $image = wp_get_attachment_src( get_post_thumbnail_id( $post->ID), 'single-post-thumbnail'); ?>
+
         #content {
-          background-image: url(' <?php echo $image[0]; ?>') no-repeat;
+          background-image: url('<?php echo $image[0]; ?>') no-repeat;
         }
-      <?php endif; ?>
+
     </style>
 
     <?php wp_head(); ?>
