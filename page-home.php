@@ -8,7 +8,19 @@ Template Name: Home
 
 <section id="content" role="main">
 
-  <?php do_action('wp_rotator'); ?>
+<?php frack_get_option_tree( 'display_slider', function ($display_slider) {
+    ?>
+      <?php if ( $display_slider == "true" ) { ?>
+        <div id="slider" class="container-fluid">
+          <?php do_action('wp_rotator'); ?>
+        </div>
+      <?php } ?>
+    <?php
+  }); ?>
+
+  <div id="slider" class="container-fluid">
+    <?php do_action('wp_rotator'); ?>
+  </div>
 
   <?php frack_get_option_tree( 'home_tagline', function ($home_tagline) {
     ?>
