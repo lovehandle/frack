@@ -7658,6 +7658,12 @@ a.badge:hover {
 #header-top-logo {
   width: 175px;
   margin-left: 20px;
+  float: left;
+}
+#header-top-text {
+  float: left;
+  margin-top: 55px;
+  margin-left: 40px;
 }
 #header-bottom {
   text-transform: uppercase;
