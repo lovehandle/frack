@@ -67,7 +67,7 @@
           </div>
           <?php frack_get_option_tree( 'header_text', function ($header_text) {
             ?>
-              <h1 id="header-top-text"><?php echo $header_text; ?></h1>
+              <h1 id="header-top-text" class="visible-desktop"><?php echo $header_text; ?></h1>
             <?php
           }); ?>
         </div>
