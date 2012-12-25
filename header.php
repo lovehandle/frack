@@ -47,6 +47,12 @@
         <?php
       }); ?>
 
+      <?php frack_get_option_tree( 'custom_css', function ($custom_css) {
+        ?>
+          <?php echo $custom_css; ?>
+        <?php
+      }); ?>
+
     </style>
 
     <?php wp_head(); ?>
