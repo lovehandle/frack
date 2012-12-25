@@ -70,6 +70,7 @@
               <h1 id="header-top-text"><?php echo $header_text; ?>" alt="" /></h1>
             <?php
           }); ?>
+        </div>
       </div>
       <div id="header-bottom">
         <div class="navbar navbar-inverse">
